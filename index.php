@@ -8,6 +8,7 @@ class User {
 	
 	/**
 	 * Some comment
+	 * Construct
 	 */
 	public function __construct(string $name, string $email)
 	{
