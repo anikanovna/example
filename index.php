@@ -6,6 +6,7 @@ class User {
 	protected $_email;
 	protected $_type;
 	
+	
 	public function __construct(string $name, string $email)
 	{
 		$this->_name  = $name;
