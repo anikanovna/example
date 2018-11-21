@@ -44,6 +44,7 @@ class User {
 }
 
 
+
 class Customer extends User {
 	
 	protected $_type = 'Customer';	
