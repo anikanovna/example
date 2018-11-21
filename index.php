@@ -135,4 +135,10 @@ $userObject->add();
 $userObject = Factory::getUserObject('Supplier', 'Petya', 'petya@yandex.ru');
 $userObject->add();
 
+$userObject = Factory::getUserObject('Guest', 'Petya', 'petya@yandex.ru');
+$userObject->add();
+
+$userObject = Factory::getUserObject('Supplier', 'Petya', 'petya@yandex.ru');
+$userObject->add();
+
 (new Users())->show();
