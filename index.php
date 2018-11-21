@@ -74,6 +74,16 @@ class Supplier extends User {
 	
 }
 
+class BlackFriday extends User {
+	
+	protected $_type = 'BlackFriday';
+	
+	public function __toString()
+	{
+		return '<b style="color:red;">' . $this->_type . '</i>' . ' ' . $this->_name . ' ' . $this->_email;
+	}
+	
+}
 
 class Factory {
 	
@@ -138,7 +148,7 @@ $userObject->add();
 $userObject = Factory::getUserObject('Guest', 'Petya', 'petya@yandex.ru');
 $userObject->add();
 
-$userObject = Factory::getUserObject('Supplier', 'Petya', 'petya@yandex.ru');
+$userObject = Factory::getUserObject('BlackFriday', 'Petya', 'petya@yandex.ru');
 $userObject->add();
 
 (new Users())->show();
