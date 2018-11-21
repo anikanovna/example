@@ -7,6 +7,7 @@ class User {
 	protected $_type;
 	
 	/**
+	 * Some comment
 	 * Construct
 	 */
 	public function __construct(string $name, string $email)
