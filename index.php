@@ -69,7 +69,7 @@ class Supplier extends User {
 	
 	public function __toString()
 	{
-		return '<i style="color:green;">' . $this->_type . '</i>' . ' ' . $this->_name . ' ' . $this->_email;
+		return '<i style="color:brown;">' . $this->_type . '</i>' . ' ' . $this->_name . ' ' . $this->_email;
 	}
 	
 }
